@@ -1,3 +1,20 @@
-$ make
-$ ./iphone_detect
+iPhone Detect Command Line Utility
+==================================
+
+Install
+-------
+
+```
+brew install libusb
+git clone git://github.com/sgleadow/iphone_detect.git
+cd iphone_detect
+make
+```
+
+Run
+---
+
+```
+./iphone_detect
 c9904eb9c8061bdf82c48da997a....d283 # hurray, it's our UDID
+```

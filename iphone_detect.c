@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 #include <string.h>
-#include "libusb.h"
+#include <libusb.h>
 
 static char *device_names[] = {"iPhone", "iPad", "iPod"};
 static int apple_vendor_id = 0x05AC;
