@@ -27,13 +27,13 @@ int main (int argc, const char * argv[])
       libusb_device_handle *handle = NULL;
       if (libusb_open(dev, &handle)) goto error;
       
-      char device[40];
+      char device[41];
       libusb_get_string_descriptor_ascii(handle, descriptor.iProduct, (unsigned char *)device, sizeof(device));
       for (j = 0; j < sizeof(device_names)/sizeof(*device_names); j++)
       {
         if (strcmp(device, device_names[j]) == 0)
         {
-          char serial[40];
+          char serial[41];
           libusb_get_string_descriptor_ascii(handle, descriptor.iSerialNumber, (unsigned char *)serial, sizeof(serial));
           printf("%s\n", serial);
         }
