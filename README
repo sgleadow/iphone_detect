@@ -18,3 +18,12 @@ Run
 ./iphone_detect
 c9904eb9c8061bdf82c48da997a....d283 # hurray, it's our UDID
 ```
+
+Issues
+------
+
+Some devices get printed out more than once. Until this is fixed, you can use the following:
+
+```
+iphone_detect | uniq
+```
